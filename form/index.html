@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单验证</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+  <div id="register_dialog">  
+    <div class="register_dialog_title">  
+        <p class="register_dialog_info">注册</p>  
+        <p class="dialog_close">X</p>  
+        <div class="clear"></div>  
+    </div>  
+    <div style="background-color:#ffffff;margin:10px;">  
+            <form action="">  
+                    <ul class="reg-box">                   
+                        <li>  
+                            <label for="">手    机</label><input type="text" placeholder="手机号为登录密码" class="phone" maxlength="11" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error1"></span>  
+                        </li>  
+                        <li>  
+                            <label for="">验证码</label><input type="text" class="sradd phonekey" placeholder="请输入收到的验证码" style="color:#999;ime-mode:disabled;-webkit-ime-mode:inactive;" banInputMethod = "english" onBlur="textBlur(this)" onFocus=" textFocus(this) " /><span class="add yzm">发送验证码</span><span class="error error2"></span>  
+                        </li>                               
+                        <li>  
+                            <label for="">密    码</label><input type="password"  class = "password" placeholder="请输入密码" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error3"></span>  
+                        </li>  
+                        <li>  
+                            <label for="">确认密码</label><input type="password"  class = "email" placeholder="请再次输入密码" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error4"></span>  
+                        </li>  
+                    </ul>  
+            <div class="sub">  
+                <input type="submit" value="立即注册" />  
+                  
+            </div>  
+              
+        </form>  
+    </div>  
+</div>  
+
+
+
+
+
+<div id="register_dialog">  
+  <div class="register_dialog_title">  
+      <p class="register_dialog_info">注册</p>  
+      <p class="dialog_close">X</p>  
+      <div class="clear"></div>  
+  </div>  
+  <div style="background-color:#ffffff;margin:10px;">  
+          <form action="">  
+                  <ul class="reg-box">                   
+                      <li>  
+                          <label for="">手    机</label><input type="text" value="手机号为登录密码" class="phone" maxlength="11" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error1"></span>  
+                      </li>  
+                      <li>  
+                          <label for="">验证码</label><input type="text" class="sradd phonekey" value="请输入收到的验证码" style="color:#999;ime-mode:disabled;-webkit-ime-mode:inactive;" banInputMethod = "english" onBlur="textBlur(this)" onFocus=" textFocus(this) " /><span class="add yzm">发送验证码</span><span class="error error2"></span>  
+                      </li>                               
+                      <li>  
+                          <label for="">密    码</label><input type="password"  class = "password" value="请输入密码" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error3"></span>  
+                      </li>  
+                      <li>  
+                          <label for="">确认密码</label><input type="password"  class = "email" value="请再次输入密码" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)"/><span class="error error4"></span>  
+                      </li>  
+                  </ul>  
+          <div class="sub">  
+              <input type="submit" value="立即注册" />  
+                
+          </div>  
+            
+      </form>  
+  </div>  
+</div>  
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
