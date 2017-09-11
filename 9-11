@@ -6,3 +6,21 @@
     
     parsefloat（） //可以识别一个小数点  第二个小数点后面就忽略了
     parseFloat（23.34.5）//23.34 只解析10进制
+
+
+如果改成这样的话 就会默认就是红色 ，为什么？
+
+这事本来模样！
+<h1 id="id1">我的标题 1</h1>
+<button type="button" onclick="document.getElementById('id1').style.color='red'">
+点我!</button>
+
+这是修改后的.....>>>>>
+
+
+<h1 id="id1">我的标题 1</h1>
+<button type="button" onclick="cc">
+点我!</button>
+<script>
+	var cc =document.getElementById('id1').style.color='red'</script>
+（想砸电脑，自学真痛苦）
